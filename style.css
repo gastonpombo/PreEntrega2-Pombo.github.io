@@ -1,0 +1,113 @@
+
+@import url('https://www.dafont.com/es/yay-usa.font');
+
+:root {
+    --clr-main: #F2DCC2;
+    --clr-white: #F2F2F2;
+    --clr-black: #0D0D0D;
+    --clr-brown: #BF9B6F;
+    --clr-fondo: #F2DCC2;
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header nav{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: -10px;
+}
+
+img{
+    justify-content: left; 
+
+}
+
+header nav ul {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    header nav ul{
+        display: flex;
+        align-items: center;
+    }
+
+    header nav span {
+        display: none
+    }
+
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    border-radius: 5px;
+    justify-content: right;
+
+}
+
+
+
+#container {
+    background-image: url('./assets/img/LOGOS/secuencialogo.png');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: -10px;
+    margin-bottom: 5px;
+}
+
+#container .logo-inicio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.section {
+    position: relative;
+    padding: -10px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+#container-ver-tienda {
+    background-image: url('./assets/img/ARTE/STRAPVOLADOR.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: -10px;
+    margin-top: 5px;
+    filter: saturate(0.7);
+}
+
+#container-mision {
+    background-image: url('./assets/img/ARTE/REVUELTOSSTRAPS.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin: -10px;
+    margin-top: 5px;
+}
+
+
