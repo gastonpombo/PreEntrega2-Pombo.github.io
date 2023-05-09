@@ -1,6 +1,6 @@
-
 @import url('https://www.dafont.com/es/yay-usa.font');
 
+/*ESTILOS INICIALES*/
 :root {
     --clr-main: #F2DCC2;
     --clr-white: #F2F2F2;
@@ -9,8 +9,12 @@
     --clr-fondo: #F2DCC2;
 }
 
-* {
-    font-family: 'Source Sans Pro', sans-serif;
+body {
+    font-family: 'Gotham', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Gotham';
 }
 
 ul {
@@ -25,7 +29,7 @@ a{
     text-decoration: none;
 }
 
-
+/*ENCABEZADO*/
 header nav{
     background-color: #F2F2F2;
     display: flex;
@@ -35,16 +39,11 @@ header nav{
     margin: -10px;
 }
 
-img{
-    justify-content: left; 
-
-}
-
 header nav ul {
     display: none;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 420px) {
     header nav ul{
         display: flex;
         align-items: center;
@@ -63,8 +62,8 @@ header nav ul li a:hover{
 }
 
 
-
-#container {
+/*SECUENCIA Y LOGO DE ARRIBA*/
+#container-inicio {
     background-image: url('./assets/img/LOGOS/secuencialogo.png');
     background-size: cover;
     position: relative;
@@ -75,39 +74,159 @@ header nav ul li a:hover{
     margin-bottom: 5px;
 }
 
-#container .logo-inicio {
+#container-inicio .logo-inicio {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-.section {
-    position: relative;
+  
+@media (min-width: 420px) {
+    #container-inicio {
+        width: 100%;
+        height: 10rem;
+        padding: 10px;
+    }
+    
+    #container-inicio .logo-inicio {
+        height: 7rem;
+        width: auto;
+    }
+}
+
+@media (min-width: 800px) {
+    #container-inicio {
+        width: 100%;
+        height: 12rem;
+        padding: 10px;
+    }
+    
+    #container-inicio .logo-inicio {
+        height: 8rem;
+        width: auto;
+    }
+
+}
+
+/*RECOMENDADOS Y FOTOS DESPLAZABLES*/
+#section .imagenes-desplazables {
+    position: center;
     padding: -10px;
     margin-left: 0px;
     margin-bottom: 5px;
 }
 
+/*RECOMENDADOS*/
+h3 {
+    font-size: 0.6rem;
+    margin: 5px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.scroll-wrapper {
+    display: flex;
+    overflow-x: auto;
+}
+
+.img-wrapper {
+    margin-right: 5px;
+}
+
+@media (min-width: 420px) {
+
+    h3 {
+        font-size: 1rem;
+        padding: 8px;
+        padding-bottom: 0px;
+    }
+    .scroll-wrapper {
+        height: 30rem;
+        width: auto;
+        padding: 10px;
+    }
+
+    .img-wrapper {
+        width: 25rem;
+    }
+
+}
+
+@media (min-width: 800px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/*GRID TIENDA Y QUIENES SOMOS*/
 #container-ver-tienda {
+    height: 11rem;
     background-image: url('./assets/img/ARTE/STRAPVOLADOR.jpg');
     background-size: cover;
     position: relative;
-    width: 100%;
-    height: 200px;
-    margin: -10px;
     margin-top: 5px;
     filter: saturate(0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*BOTON VER TIENDA*/
+#container-ver-tienda .button-vertienda {
+    height: 2rem;
+    width: 8rem;
+    background-color: rgba(255, 255, 255, 0.37);
+    color: white;
+    border-radius: 6px;
+    border-color: #f2f2f2a2;
+    box-shadow: black;
+    font-weight: bold;
+}
+
+@media (min-width: 420px) {
+    #container-ver-tienda {
+        height: 40rem;
+        background-position: center;    
+        background-size: 70rem;
+        background-repeat: no-repeat;
+        padding: 10px;
+    } 
+
+    #container-ver-tienda .button-vertienda {
+        height: 4rem;
+        width: 12rem;
+        font-size: large;
+    }
+
 }
 
 #container-mision {
+    height: 11rem;
     background-image: url('./assets/img/ARTE/REVUELTOSSTRAPS.jpg');
     background-size: cover;
     position: relative;
-    width: 100%;
-    height: 200px;
-    margin: -10px;
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+/*BOTON MISION*/
+#container-mision .button-mision {
+    height: 2rem;
+    width: 10rem;
+    background-color: rgba(255, 255, 255, 0.37);
+    color: white;
+    border-radius: 6px;
+    border-color: #f2f2f2a2;
+    box-shadow: black;
+    font-weight: bold;
+}
+
+/*FOOTER*/
 
 
