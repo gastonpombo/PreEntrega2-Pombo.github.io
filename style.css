@@ -229,4 +229,62 @@ h3 {
 
 /*FOOTER*/
 
+.footer {
+    background-color: #FCF5E5;
+    color: #2EA1DA;
+    padding: 10px 10px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 420px) {
+    .footer-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+.footer-container h4 {
+    color: #2EA1DA;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: -10px;
 
+}
+
+.footer-container-rrss {
+    text-align: center;
+}
+.footer-container-list li {
+    margin: 10px 0;
+    text-align: center;
+}
+.footer-container-list li a {
+    color: #3C3D42;
+    transition: all 0.3s;
+}
+.footer-container-list li a:hover {
+    color: white ;
+}
+.footer-container-rrss {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.footer-container-rrss .instagram {
+    color: #2EA1DA;
+    font-size: 30px;
+    transition: all 0.3s;
+}
+.footer-container .instagram:hover {
+    color: black;
+}
+.footer-container-rrss .whatsapp {
+    color: #2EA1DA;
+    font-size: 30px;
+    transition: all 0.3s;
+  }
+  .footer-container .whatsapp:hover {
+    color: black;
+  }
