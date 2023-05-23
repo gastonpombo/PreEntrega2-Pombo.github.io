@@ -1,0 +1,137 @@
+/*RECOMENDADOS Y FOTOS DESPLAZABLES*/
+#section .container__wrapper {
+    background-color: #FCF5E5;
+    position: center;
+    padding: -10px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+/*TEXTO RECOMENDADOS*/
+h1 {
+    font-size: 0.6rem;
+    margin: 5px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container__wrapper-scroll {
+    display: flex;
+    overflow-x: auto;
+}
+
+.container__wrapper-scroll-img {
+    margin-right: 5px;
+}
+
+@media (min-width: 420px) {
+
+    h1 {
+        font-size: 1rem;
+        padding: 8px;
+        padding-bottom: 0px;
+    }
+    .container__wrapper-scroll {
+        height: 30rem;
+        width: auto;
+        padding: 10px;
+    }
+
+    .container__wrapper-scroll-img {
+        width: 25rem;
+    }
+
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+/*GRID TIENDA Y QUIENES SOMOS*/
+
+
+/*VER TIENDA*/
+#container__ver-tienda {
+    background-color: #FCF5E5;
+    height: 11rem;
+    background-image: url('../assets/img/ARTE/STRAPSTIENDA.jpg');
+    background-size: 100%;
+    position: relative;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*BOTON VER TIENDA*/
+#container__ver-tienda .container__button-ver-tienda {
+    height: 2rem;
+    width: 8rem;
+    background-color: rgba(255, 255, 255, 0.37);
+    color: white;
+    border-radius: 6px;
+    border-color: #f2f2f2a2;
+    box-shadow: black;
+    font-weight: bold;
+}
+
+@media (min-width: 420px) {
+    #container__ver-tienda {
+        height: 40rem;
+        background-position: center;    
+        background-size: 70rem;
+        background-repeat: no-repeat;
+        padding: 10px;
+    } 
+
+    #ccontainer__ver-tienda .container__button-ver-tienda {
+        height: 4rem;
+        width: 12rem;
+        font-size: large;
+    }
+}
+
+/*QUIENES SOMOS*/
+#container__quienes-somos {
+    background-color: #FCF5E5;
+    height: 11rem;
+    background-image: url('../assets/img/ARTE/REVUELTOSSTRAPS.jpg');
+    background-size: 100%;
+    position: relative;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 420px) {
+    #container__quienes-somos {
+        height: 40rem;
+        background-position: center;    
+        background-size: 70rem;
+        background-repeat: no-repeat;
+        padding: 10px;
+    } 
+
+    #container__quienes-somos .container__-button-quienes-somos {
+        font-size: large;
+    }
+}
+
+/*BOTON QUIENES SOMOS*/
+#container__quienes-somos .container__-button-quienes-somos {
+    height: 2rem;
+    width: 10rem;
+    background-color: rgba(255, 255, 255, 0.37);
+    color: white;
+    border-radius: 6px;
+    border-color: #f2f2f2a2;
+    box-shadow: black;
+    font-weight: bold;
+}
