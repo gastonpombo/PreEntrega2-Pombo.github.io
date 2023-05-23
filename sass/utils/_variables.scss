@@ -1,28 +1,18 @@
-/*ESTILOS INICIALES*/
-:root {
-    --clr-main: #F2DCC2;
-    --clr-white: #F2F2F2;
-    --clr-black: #0D0D0D;
-    --clr-brown: #BF9B6F;
-    --clr-fondo: #F2DCC2;
-}
+// COLORES
 
-body {
-    font-family: 'Gotham', sans-serif;
-}
+$background: #FCF5E5;
+$fontlight: #FCF5E5;
+$fontdark: #3C3D42;
+$fontcolor: #2EA1DA;
+$bgButton: #ffffff5e;
+$borderButton: #f2f2f2a2;
 
-h1, h2, h3 {
-    font-family: 'Gotham';
-}
+// BREAKPOINTS
 
-ul {
-    list-style-type: none;
-}
+$bpSmall: 576px;
+$bpMedium: 768px;
+$bpLarge: 992px;
 
-li {
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-}
+// DEFAULT
+$borderRadius: 10px;
+$boxShadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);

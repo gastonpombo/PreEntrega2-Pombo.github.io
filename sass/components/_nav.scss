@@ -1,16 +1,22 @@
 /*ENCABEZADO*/
-header nav{
-    background-color: #FCF5E5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: -10px;
+.header {
+    background-color: $background;
+
+    &__container {
+        @include templateFlex(right, true, relative);
+        height: 80px;
+    }
+
+    &-logo {
+        @include templateFlex(left, true, relative);
+    }
+
 }
 
 header nav ul {
     display: none;
 }
+
 
 @media (min-width: 420px) {
     header nav ul{

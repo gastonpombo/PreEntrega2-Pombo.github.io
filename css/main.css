@@ -27,35 +27,6 @@ a {
   text-decoration: none;
 }
 
-/*ESTILOS INICIALES*/
-:root {
-  --clr-main: #F2DCC2;
-  --clr-white: #F2F2F2;
-  --clr-black: #0D0D0D;
-  --clr-brown: #BF9B6F;
-  --clr-fondo: #F2DCC2;
-}
-
-body {
-  font-family: "Gotham", sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: "Gotham";
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 /*HEADER-LOGO INICIO Y SECUENCIA*/
 #container__inicio {
   background-image: url("../assets/img/LOGOS/secuencialogo.png");
@@ -293,13 +264,21 @@ h1 {
 }
 
 /*ENCABEZADO*/
-header nav {
+.header {
   background-color: #FCF5E5;
+}
+.header__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  position: relative;
   align-items: center;
-  padding: 10px;
-  margin: -10px;
+  height: 80px;
+}
+.header-logo {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
 }
 
 header nav ul {

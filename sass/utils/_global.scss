@@ -26,3 +26,17 @@ li {
 a{
     text-decoration: none;
 }
+
+
+@mixin templateFlex( $justify, $align, $position) {
+    display: flex;
+    justify-content: flex-end;
+    position: $position;
+
+    @if ($align == true) {
+        align-items: center;
+    }
+    @if ($align == false) {
+        align-items: end;
+    }
+}
