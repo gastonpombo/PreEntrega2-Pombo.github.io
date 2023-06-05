@@ -28,12 +28,25 @@ a{
 }
 
 
+<<<<<<< HEAD
 @mixin templateFlex($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
+=======
+@mixin templateFlex( $justify, $align, $position) {
+    display: flex;
+    justify-content: flex-end;
+    position: $position;
+>>>>>>> agregando-sass
 
     @if ($align == true) {
         align-items: center;
     }
+<<<<<<< HEAD
+=======
+    @if ($align == false) {
+        align-items: end;
+    }
+>>>>>>> agregando-sass
 }

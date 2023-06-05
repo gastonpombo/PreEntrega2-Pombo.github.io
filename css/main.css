@@ -274,7 +274,11 @@ h1 {
   align-items: center;
   height: 80px;
 }
+<<<<<<< HEAD
 .header__container-logo {
+=======
+.header-logo {
+>>>>>>> agregando-sass
   display: flex;
   justify-content: flex-end;
   position: relative;

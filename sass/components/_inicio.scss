@@ -1,0 +1,46 @@
+/*HEADER-LOGO INICIO Y SECUENCIA*/
+#container__inicio {
+    background-image: url('../assets/img/LOGOS/secuencialogo.png');
+    background-color: #FCF5E5;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: -10px;
+    margin-bottom: 5px;
+}
+
+#container__inicio .container__incio-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+  
+@media (min-width: 420px) {
+    #container__inicio {
+        width: 100%;
+        height: 10rem;
+        padding: 10px;
+    }
+    
+    #container__inicio .container__incio-logo {
+        height: 7rem;
+        width: auto;
+    }
+}
+
+@media (min-width: 800px) {
+    #container__inicio {
+        width: 100%;
+        height: 12rem;
+        padding: 10px;
+    }
+    
+    #container__inicio .container__incio-logo {
+        height: 8rem;
+        width: auto;
+    }
+}
