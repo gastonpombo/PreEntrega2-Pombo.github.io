@@ -1,0 +1,56 @@
+/*ENCABEZADO*/
+
+#header {
+    background-color: $background;
+
+    &__container {
+        @include templateFlex(row, space-between, true);
+        height: 80px;
+    }
+
+    &__container-logo {
+        justify-self: left;
+    }
+
+}
+
+header nav ul {
+    display: none;
+}
+
+/*
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+ &__container-logo {
+    position: absolute;
+    left: 0;
+  }
+  
+  &__container-ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+*/
+
+@media (min-width: 420px) {
+    header nav ul{
+        display: flex;
+        align-items: center;
+    }
+
+    header nav span {
+        display: none
+    }
+
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    border-radius: 5px;
+    justify-content: right;
+
+}
